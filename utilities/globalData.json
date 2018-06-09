@@ -1,0 +1,24 @@
+{
+    "baseURL":"http://juliemr.github.io/protractor-demo/",
+
+    "landingPage":{
+        "firstInputBoxData":"5",
+        "secondInputBoxData":"10",
+        "validateData":"15"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
