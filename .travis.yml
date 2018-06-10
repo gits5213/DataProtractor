@@ -6,7 +6,7 @@ script:
   - docker run -d -p 127.0.0.1:4444:4444 selenium/standalone-chrome:3.6.0-bromine
   - protractor conf.js
 
-  notifications:
+notifications:
   slack: 
     channels:
       - "#it-training"
