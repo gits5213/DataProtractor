@@ -1,15 +1,12 @@
+language: node_js
+node_js: 'node'
 notifications:
-  slack: 
-    channels:
-      - "#it-training"
-    on_success: always
-
+  slack: false
   email:
     recipients:
       - md83shahnewaz@gmail.com
     on_success: always 
     on_failure: always 
-
 script:
   - npm install -g protractor
   - webdriver-manager update
