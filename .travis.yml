@@ -5,3 +5,15 @@ script:
   - docker pull selenium/standalone-chrome:3.6.0-bromine
   - docker run -d -p 127.0.0.1:4444:4444 selenium/standalone-chrome:3.6.0-bromine
   - protractor conf.js
+
+  notifications:
+  slack: 
+    channels:
+      - "#it-training"
+    on_success: always
+
+  email:
+    recipients:
+      - md83shahnewaz@gmail.com
+    on_success: always 
+    on_failure: always 
