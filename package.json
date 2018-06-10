@@ -1,0 +1,22 @@
+{
+  "name": "dataprotractor",
+  "version": "1.0.0",
+  "description": "test suite",
+  "main": "conf.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msz5213/DataProtractor.git"
+  },
+  "author": "testProducer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msz5213/DataProtractor/issues"
+  },
+  "homepage": "https://github.com/msz5213/DataProtractor#readme",
+  "devDependencies": {
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}
