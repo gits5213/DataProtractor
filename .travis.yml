@@ -14,5 +14,5 @@ script:
   - webdriver-manager update
   #- webdriver-manager start
   - docker pull selenium/standalone-chrome:3.6.0-bromine
-  - docker run -p 127.0.0.1:4444:4444 selenium/standalone-chrome:3.6.0-bromine
+  - docker run -d -p 127.0.0.1:4444:4444 selenium/standalone-chrome:3.6.0-bromine
   - protractor conf.js
