@@ -1,3 +1,5 @@
+var ldpage = require('../pages/solLandingPage.js');
+
 describe('End to End QA Search Resault ', function() {
 
   //beforeEach(function () {
@@ -8,12 +10,13 @@ describe('End to End QA Search Resault ', function() {
     });
 
     it('user able to click on menu link', function() {
-      $(".cd-menu-text").click();
+      //$(".cd-menu-text").click();
+      ldpage.manuText().click();
       browser.sleep(1000);
     });
 
     it('user able to click on open position', function() {
-      $("#transformedObject > div > div > div.column.half.staff > ul:nth-child(3) > li:nth-child(3) > a").click();
+      ldpage.openPosition().click();
       browser.sleep(2000);
     });
 
@@ -25,8 +28,8 @@ describe('End to End QA Search Resault ', function() {
     });
 
     it('user able to search by keyword QA', function() {
-        $("#jsb_f_keywords_i").sendKeys("qa");
-        $("#jsb_form_submit_i").click();
+      ldpage.jobImputFiled().sendKeys("qa");
+      ldpage.searchBtn().click();
     });
 
     it('user able to validate QA search result', function() {
