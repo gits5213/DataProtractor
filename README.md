@@ -24,3 +24,9 @@
     
 # Run the test
     `protractor conf.js`
+    
+# Install Yarn
+    `npm install yarn -g`
+    `yarn init`
+    `yarn add webdriver-manager update`
+    `yarn add protractor-jasmine2-html-reporter`
