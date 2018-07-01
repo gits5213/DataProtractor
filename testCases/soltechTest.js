@@ -34,9 +34,11 @@ describe('End to End QA Search Resault ', function() {
 
     it('user able to validate QA search result', function() {
         // can be used class name .row or tag li
-        $$(".container-fluid.iCIMS_JobsTable li").count().then(function(rowCount){
+        let list = $$(".container-fluid.iCIMS_JobsTable li");
+        list.count().then(function(rowCount){
             console.log("Total Number Of List/rows:"+ rowCount); 
           });
       browser.sleep(2000);
+      expect(list.count()).toBe(7);
     });
   });
